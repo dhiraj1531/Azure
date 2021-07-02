@@ -1,4 +1,4 @@
-resource "azurerm_sql_server" "primary" {
+resource "azurerm_ora_server" "primary" {
     name = var.primary_database
     resource_group_name = var.resource_group
     location = var.location
@@ -7,7 +7,7 @@ resource "azurerm_sql_server" "primary" {
     administrator_login_password = var.primary_database_password
 }
 
-resource "azurerm_sql_database" "db" {
+resource "azurerm_ora_database" "db" {
   name                = "db"
   resource_group_name = var.resource_group
   location            = var.location
