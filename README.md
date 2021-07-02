@@ -1,12 +1,8 @@
 # Azure
 What is 3-Tier Architecture?
-
 There are layer in 3-Tier architecture 
-
 1) User interface 
-
 2) Web layer 
-
 3) DB layer 
 
 I would propose to build infra by terraform automation tool
