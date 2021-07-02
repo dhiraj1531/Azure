@@ -11,5 +11,5 @@ resource "azurerm_ora_database" "db" {
   name                = "db"
   resource_group_name = var.resource_group
   location            = var.location
-  server_name         = azurerm_sql_server.primary.name
+  server_name         = azurerm_ora_server.primary.name
 }
